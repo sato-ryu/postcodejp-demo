@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  form#postcode-form(action='/postcode')
+    label.form-label(for='postcode') | 郵便番号
+    input.form-control(type='text' name='postcode')
+
+    input.btn.btn-primary(type='submit' value='検索')
+
+  #address
+
+  script(src='./javascripts/postcode.js')
